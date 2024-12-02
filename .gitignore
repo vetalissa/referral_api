@@ -1,8 +1,9 @@
 venv/
-user_image/
+
 .idea/
 .flake8
 .env
 *.sqlite3
-stripe
+
+
 __pycache__/
