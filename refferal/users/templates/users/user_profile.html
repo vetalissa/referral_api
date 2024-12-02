@@ -20,7 +20,7 @@
 <h2>Пользователи, которые ввели ваш инвайт-код:</h2>
 <ul>
     {% for invited_user in invited_users %}
-    <li>{{ invited_user.phone_number }}</li>
+    <li>{{ invited_user }}</li>
     {% endfor %}
 </ul>
 {% else %}

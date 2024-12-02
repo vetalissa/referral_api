@@ -7,7 +7,7 @@ from django.shortcuts import redirect, render
 from .forms import CodeForm, PhoneNumberForm
 from .models import User
 
-
+from django.shortcuts import HttpResponseRedirect
 def login(request):
     """ Вход, ввод номера телефона и звонок(генерация кода) для входа. """
     if request.method == 'POST':
