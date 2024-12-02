@@ -1,0 +1,6 @@
+<form method="POST">
+  {% csrf_token %}
+  <h3>Сделаем вид, что вам позвонили, напишите {{ code }} </h3>
+  {{ form.as_p }}
+  <button type="submit">Проверить код</button>
+</form>

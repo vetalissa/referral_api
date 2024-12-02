@@ -1,0 +1,102 @@
+body{
+  margin: 0;
+  font-weight: 400;
+  font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+h1{
+  color: black;
+  font-size: 30px;
+  font-family: serif;
+}
+
+h2{
+  font-size: 30px;
+  font-weight: 600;
+  font-family: serif;
+}
+
+h3{
+  font-size: 25px;
+  font-weight: 400;
+}
+
+h4{
+  font-size: 18px;
+}
+
+a{
+  font-size: 16px;
+  font-weight: 600;
+}
+
+p{
+  font-size: 16px;
+}
+
+.okno{
+  width: 80%;
+  height: 60%;
+  margin: 0 auto;
+}
+
+.header{
+  display: flex;
+  align-items: center;
+  background: #364e446e;
+  height: 60px;
+  width: 100%;
+}
+
+.header-menu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.button{
+  padding: 15px;
+  background: #222222;
+  color: #fff;
+  width: max-content;
+}
+
+
+.forma-login{
+  display: flex;
+  margin: 0 auto;
+  margin-top: 35px;
+  padding: 30px;
+  width: 552px;
+  border: 1px solid rgba(0,0,0,.125);
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.form-input{
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0px;
+}
+
+.form-title{
+  padding: 6px 12px;
+  width: 445px;
+  height: 40px;
+  background: none;
+  border: 1px solid rgb(0 0 0 / 29%);
+}
+
+.profile{
+  display: flex;
+  margin: 0 auto;
+  margin-top: 35px;
+  padding: 30px;
+  width: 552px;
+  border: 1px solid rgba(0,0,0,.125);
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+}

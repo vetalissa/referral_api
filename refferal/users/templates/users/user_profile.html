@@ -1,0 +1,34 @@
+<h1>Привет, {{ user.phone_number }}!</h1>
+<h2>Ваш инвайт-код: {{invite_code}}</h2>
+
+{% if message %}
+<p>{{ message }}</p>
+{% endif %}
+
+{% if not activ_invite_code %}
+<form method="POST">
+    {% csrf_token %}
+    <input type="text" name="invite_code" placeholder="Введите инвайт-код" required>
+    <button type="submit">Активировать инвайт-код</button>
+</form>
+{% else %}
+<h2>Ваш активированный инвайт-код: {{activ_invite_code}}</h2>
+
+{% endif %}
+
+{% if invited_users %}
+<h2>Пользователи, которые ввели ваш инвайт-код:</h2>
+<ul>
+    {% for invited_user in invited_users %}
+    <li>{{ invited_user.phone_number }}</li>
+    {% endfor %}
+</ul>
+{% else %}
+<h2>Никто не активировал ваш инвайт-код :(:</h2>
+{% endif %}
+
+
+<form method="POST" action="{% url 'users:logout' %}">
+    {% csrf_token %}
+    <button type="submit">Выйти</button>
+</form>
